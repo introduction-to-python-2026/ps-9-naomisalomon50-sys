@@ -13,6 +13,7 @@ df = pd.read_csv('/content/parkinsons.csv')
 df = df.dropna()
 df
 
+print(df.columns.to_list())
 X = df[["HNR", "MDVP:APQ"]]
 y = df["status"]
 
